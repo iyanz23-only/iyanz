@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Saya</title>
+  <style>
+    body {
+      background-color: #FFFFE0; /* Light Yellow */
+      font-family: Arial, sans-serif;
+      color: #191970; /* Midnight Blue */
+    }
+
+    .kartu-profil {
+      width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .kartu-profil img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    .kartu-profil h1 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .kartu-profil p {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .kartu-profil a {
+      display: block;
+      margin: 10px 0;
+      color: #191970;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .kartu-profil a:hover {
+      text-decoration: underline;
+    }
+
+    .kartu-profil button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #191970;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .kartu-profil button:hover {
+      background-color: #000080; /* Navy */
+    }
+  </style>
+</head>
+<body>
+  <div class="kartu-profil">
+    <img src="hiya.jpg" alt="Foto Profil Saya">
+    <h1>Nama Lengkap Anda</h1>
+    <p>Siswa yang suka tersenyum!</p>
+    <a href="http://www.instagram.com/usernameanda" target="_blank">Kunjungi Instagram Saya</a>
+    <button id="sapa-button">Sapa Saya</button>
+  </div>
+
+  <script>
+    const tombolSapa = document.getElementById('sapa-button');
+    tombolSapa.addEventListener('click', () => {
+      alert('Halo! Terima kasih sudah berkunjung!');
+    });
+  </script>
+</body>
+</html>
